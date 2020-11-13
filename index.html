@@ -9,6 +9,12 @@
     gtag('js', new Date());
     gtag('config', 'G-9VP80RJTFP');
     </script>
+    <meta property="og:title" content="Taboo Monument">
+    <meta property="og:site_name" content="Taboo Monument">
+    <meta property="og:url" content="https://taboo-monument.github.io/3D-monument/">
+    <meta property="og:description" content="Let's end the taboo that prevents us to talk about the topic at Bhumibol Sq in Cambridge.">
+    <meta property="og:type" content="place">
+    <meta property="og:image" content="https://taboo-monument.github.io/3D-monument/assets/images/taboo-monument-og.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -26,9 +32,28 @@
             background-color: #cccccc;
             --poster-color: #ffffff00;
         }
+        #ar-button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    bottom: 32px;
+    padding: 0px 22px 2px 22px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+    height: 44px;
+    border-radius: 22px;
+    border: 1.5px solid #333;
+        }
     </style>
 </head>
 <body>
-    <model-viewer src="./assets/models/taboo-monument.glb" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls alt="A 3D model of the taboo monument" ios-src="./assets/models/taboo-monument.usdz" shadow-intensity="1" shadow-softness="1" ></model-viewer>
+    <model-viewer src="./assets/models/taboo-monument.glb" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls alt="A 3D model of the taboo monument" ios-src="./assets/models/taboo-monument.usdz" shadow-intensity="1" shadow-softness="1" >
+      <button slot="ar-button" id="ar-button">
+    View in Your Space
+  </button>
+    </model-viewer>
 </body>
 </html>
