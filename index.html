@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VP80RJTFP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9VP80RJTFP');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <title>3D Taboo Monument</title>
+    <style>
+        html, body  {
+            margin: 0;
+            height: 100%;
+            background-color: #cccccc;
+        }
+        model-viewer {
+            width: 100%;
+            height: 100%;
+            background-color: #cccccc;
+            --poster-color: #ffffff00;
+        }
+    </style>
+</head>
+<body>
+    <model-viewer src="/assets/models/taboo-monument.glb" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls alt="A 3D model of the taboo monument" ios-src="/assets/models/taboo-monument.usdz" shadow-intensity="1" shadow-softness="1" ></model-viewer>
+</body>
+</html>
